@@ -14,9 +14,18 @@ python -m pip install -r requirements.txt
 
 ۲. نصب برنامهٔ **Tesseract OCR** به‌همراه دادهٔ زبان‌های فارسی (`fas`) و انگلیسی (`eng`). نصب Tesseract به سیستم‌عامل بستگی دارد؛ در Ubuntu/Debian:
 
+#### APT package managers
+
 ```bash
 sudo apt update
 sudo apt install tesseract-ocr tesseract-ocr-fas tesseract-ocr-eng
+```
+
+#### PACMAN package managers
+
+``` bash
+sudo pacman -Syu tesseract tesseract-data-fas tesseract-data-eng
+tesseract --list-langs
 ```
 
 در Windows، Tesseract را نصب کنید و مطمئن شوید داده‌های زبان `fas` و `eng` هم نصب شده‌اند. اگر برنامه در `PATH` نیست، مسیر `tesseract.exe` را با `--tesseract-cmd` بدهید.
